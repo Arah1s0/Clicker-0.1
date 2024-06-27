@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Clicker</title>
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+ <div id="balBox">
+   <h2 id="balance">Баланс: <span id="ball">0</span></h2>
+   <h4 id="forClickText">За клик: <span id="forClick">1</span></h4>
+   <h4 id="perSecondText">В секунду: <span id="perSecond">0</span></h4>
+  </div>
+  
+  <div id="clicker" onclick="addMoney()"></div>
+  
+  <div id="shopBox">
+   <h3 id="shopName">Магазин</h3>
+   <div id="shop1" onclick="addClick()">
+    <h4 id="name1">+1 к клику</h4>
+    <h6 id="info1">Добавляет +1 к<br/>
+    клику за каждое<br/>
+    улучшение</h6>
+    <h5 id="price1">Цена: <span id="clickPrice">1000</span></h5>
+   </div>
+   <div id="shop2" onclick="addFarm()">
+    <h4 id="name2">+1 к фарму</h4>
+    <h6 id="info2">Добавляет +1 к<br/>
+    майнингу в секунду<br/>
+    за каждое улучшение</h6>
+    <h5 id="price2">Цена: <span id="farmPrice">200</span></h5>
+   </div>
+  </div>
+  <a href="https://t.me/Areh_ST">
+   <div id="tgBox">
+    <img id="tg" src="tg.png">
+    <h6 id="tgInf">Заходи в телеграм-канал!</h6>
+   </div>
+  </a>
+  <script src="script.js"></script>
+ </body>
+</html>
